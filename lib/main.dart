@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: ListView.builder(
-        itemCount: 20,
+        itemCount: 5,
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(top: 20),
