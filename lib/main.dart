@@ -45,7 +45,7 @@ class MyHomePage extends StatelessWidget {
               subtitle: Text(
                 "When Yuuko Yoshida wakes up one morning to discover that she’s sprouted horns and a tail, she learns something that her mother has been meaning to tell her. You know that battle between the Light and Dark that’s been going on since the dawn of time? Well, Yuuko’s family are the bad guys.",
                 maxLines: 2,
-                // overflow: TextOverflow.ellipsis
+                overflow: TextOverflow.ellipsis
               ),
             ),
           );
