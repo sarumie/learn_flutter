@@ -36,14 +36,14 @@ class MyHomePage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(top: 20),
-            child: ListTile(leading: Image.network("https://i.ibb.co/n8L3zXT/original-drawn-by-cheli-kso1564-d7a8be2c33774266e7f7b9ad20f5e880.png"),
+            child: ListTile(leading: Image.network("https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107490-wolT0UvNSetx.png"),
               title: Text(
-                "Anime", 
+                "Machikado Mazoku", 
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis
               ),
               subtitle: Text(
-                "Sebenarnya kalian hanya ninggen tidak berguna karena watashi tidak akan memaafkan kamu dan kamu harus mennyembah aku",
+                "When Yuuko Yoshida wakes up one morning to discover that she’s sprouted horns and a tail, she learns something that her mother has been meaning to tell her. You know that battle between the Light and Dark that’s been going on since the dawn of time? Well, Yuuko’s family are the bad guys.",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis
               ),
