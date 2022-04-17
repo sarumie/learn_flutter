@@ -27,22 +27,19 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          // The title text which will be shown on the action bar
-          title: Text(title),
-        ),
-        body: Center(
-            child: IntrinsicWidth(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              RaisedButton(
-                onPressed: () {},
-                child: Text('Tombol Pendek'),
-              ),
-              RaisedButton(onPressed: () {}, child: Text('Tombol lebih Panjang'))
-            ],
-          ),
-        )));
+      appBar: AppBar(
+        // The title text which will be shown on the action bar
+        title: Text(title),
+      ),
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: ListTile(leading: Image.network("https://i.ibb.co/n8L3zXT/original-drawn-by-cheli-kso1564-d7a8be2c33774266e7f7b9ad20f5e880.png"), title: Text("Lorem", maxLines: 2, overflow: TextOverflow.ellipsis)),
+          );
+        },
+      ),
+    );
   }
 }
