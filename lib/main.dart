@@ -36,7 +36,8 @@ class MyHomePage extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.only(top: 20),
-            child: ListTile(leading: Image.network("https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107490-wolT0UvNSetx.png"),
+            child: ListTile(
+              leading: Image.network("https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107490-wolT0UvNSetx.png"),
               title: Text(
                 "Machikado Mazoku", 
                 maxLines: 1,
@@ -46,11 +47,11 @@ class MyHomePage extends StatelessWidget {
                 "When Yuuko Yoshida wakes up one morning to discover that she’s sprouted horns and a tail, she learns something that her mother has been meaning to tell her. You know that battle between the Light and Dark that’s been going on since the dawn of time? Well, Yuuko’s family are the bad guys.",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis
-              ),
-            ),
+              )
+            )
           );
-        },
-      ),
+        }
+      )
     );
   }
 }
