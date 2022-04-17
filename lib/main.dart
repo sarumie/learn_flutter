@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Flutter Home'),
+      home: MyHomePage(title: 'Learn Flutter'),
     );
   }
 }
@@ -27,22 +27,31 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          // The title text which will be shown on the action bar
-          title: Text(title),
-        ),
-        body: Center(
-            child: IntrinsicWidth(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: <Widget>[
-              RaisedButton(
-                onPressed: () {},
-                child: Text('Tombol Pendek'),
+      appBar: AppBar(
+        // The title text which will be shown on the action bar
+        title: Text(title),
+      ),
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.only(top: 20),
+            child: ListTile(
+              leading: Image.network("https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107490-wolT0UvNSetx.png"),
+              title: Text(
+                "Machikado Mazoku", 
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis
               ),
-              RaisedButton(onPressed: () {}, child: Text('Tombol lebih Panjang'))
-            ],
-          ),
-        )));
+              subtitle: Text(
+                "When Yuuko Yoshida wakes up one morning to discover that she’s sprouted horns and a tail, she learns something that her mother has been meaning to tell her. You know that battle between the Light and Dark that’s been going on since the dawn of time? Well, Yuuko’s family are the bad guys.",
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis
+              )
+            )
+          );
+        }
+      )
+    );
   }
 }
