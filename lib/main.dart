@@ -38,15 +38,15 @@ class MyHomePage extends StatelessWidget {
             padding: const EdgeInsets.only(top: 20),
             child: ListTile(leading: Image.network("https://i.ibb.co/n8L3zXT/original-drawn-by-cheli-kso1564-d7a8be2c33774266e7f7b9ad20f5e880.png"),
               title: Text(
-                "Lorem", 
+                "Anime", 
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis
               ),
               subtitle: Text(
-                "Congue ipsum sed stet ea et dolore rebum takimata nisl diam nulla dolor clita dolores eum sed et gubergren delenit",
+                "Sebenarnya kalian hanya ninggen tidak berguna karena watashi tidak akan memaafkan kamu dan kamu harus mennyembah aku",
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis
-              )
+              ),
             ),
           );
         },
